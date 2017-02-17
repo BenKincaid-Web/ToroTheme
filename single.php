@@ -7,7 +7,7 @@
  * @package ToroAMA
  */
 
-include("/parts/page-header.php"); ?>
+include "parts/page-header.php"; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="single-main" role="main">

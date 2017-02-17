@@ -12,7 +12,7 @@
  * @package ToroAMA
  */
 
-include("/parts/page-header.php"); ?>
+include "parts/page-header.php"; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -36,7 +36,6 @@ include("/parts/page-header.php"); ?>
             
 		</main><!-- #main -->
 	</div><!-- #primary -->
-poop
 <?php
 
 get_footer();

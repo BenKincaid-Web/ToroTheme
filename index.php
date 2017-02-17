@@ -12,13 +12,13 @@
  * @package ToroAMA
  */
 
-include("/parts/home-header.php"); ?>
+include "parts/home-header.php"; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
-		if ( have_posts() ) :
+     		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
