@@ -12,28 +12,33 @@
  * @package ToroAMA
  */
 
+
+
+
+
+
+
+
+
+
+
+include "form-process.php";
 include "parts/page-header.php"; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-            <form method="post" action="<?php home_url(); ?>">
-                <textarea name="message"></textarea>
-                <input type="submit">
-            </form>
-            
-            <?php 
-            
-                
-                if($_POST["message"]) {
-                    mail("BenKincaidWeb@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
-                    echo("<script>console.log('200')</script>");
-                }
+			<div class="container">
+				<form method="post" action = "<?php $_SERVER['PHP_SELF']; ?>">
+					<input type="text" name = "contact-name"  value="<?php echo $name ?>">
+						<span class="error"><?php echo $name_error; ?></span>
+					<input type="submit">
+					<div class="success"><?php echo $success ?></div>
+				</form>
+			</div>
 
-               ?>
-                            
-           
-            
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

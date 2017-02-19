@@ -8,28 +8,28 @@ include "parts/home-header.php"; ?>
         $home1 = 1735;//This is page id or post id
         $home1_post = get_post($home1);
         $home1_content = $home1_post->post_content;
-          
+
         $card_1 = 1737; // MEMBER BENEFITS META
         $card_2 = 1739; //Calendar of EVENTS META
         $card_3 = 1741; // MEET THE BOARD META
-            
+
         $card_1link = 1747; // MEMBER BENEFITS PL
         $card_2link = 1729; //Calendar of EVENTS PL
         $card_3link = 1721; // MEET THE BOARD PL
-            
+
         $card1_post = get_post($card_1);
         $card2_post = get_post($card_2);
         $card3_post = get_post($card_3);
-            
+
         $card1_title = $card1_post->post_title;
         $card2_title = $card2_post->post_title;
         $card3_title = $card3_post->post_title;
-            
+
         $card1_content = $card1_post->post_content;
         $card2_content = $card2_post->post_content;
         $card3_content = $card3_post->post_content;
 
-            
+
 		if ( have_posts() ) :
 
 			if ( $home1_content ) : ?>
@@ -37,8 +37,8 @@ include "parts/home-header.php"; ?>
                 <p class="home1-text">
 				    <?php echo $home1_content; ?>
                 </p>
-           
-            
+
+
             <div class="home-card">
                 <div class="card">
                     <div class="card-top">
@@ -51,7 +51,7 @@ include "parts/home-header.php"; ?>
                     </div>
                 </div>
             </div>
-            
+
              <div class="home-card">
                 <div class="card">
                     <div class="card-top">
@@ -64,7 +64,7 @@ include "parts/home-header.php"; ?>
                     </div>
                 </div>
             </div>
-            
+
             <div class="home-card">
                 <div class="card">
                     <div class="card-top">
@@ -77,7 +77,7 @@ include "parts/home-header.php"; ?>
                     </div>
                 </div>
             </div>
-                
+
              </div>
             <div class="home2">
                 <h3>Latest News</h3>
@@ -86,11 +86,11 @@ include "parts/home-header.php"; ?>
                     <?php
 
                     $args = array( 'numberposts' => '5',
-                                    'category' => '34');
+                                    'category' => 'news');
                     $recent_posts = wp_get_recent_posts( $args );
-                    
-                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
-                    
+
+                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+
                     foreach( $recent_posts as $recent ){
                         echo '<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" ><li class = "news-li"><p>' .  $recent["post_title"].  '</p> </li></a> ';
                     }
@@ -101,10 +101,10 @@ include "parts/home-header.php"; ?>
 			<?php
 			endif;
 
-			
 
 
-	
+
+
 
 		else :
 
