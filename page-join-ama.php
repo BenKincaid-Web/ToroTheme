@@ -29,10 +29,32 @@ include "parts/page-header.php"; ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="container">
+
 				<form method="post" action = "<?php $_SERVER['PHP_SELF']; ?>">
+					<h3>Name:</h3>
 					<input type="text" name = "contact-name"  value="<?php echo $name ?>">
 						<span class="error"><?php echo $name_error; ?></span>
-					<input type="submit">
+						<h3>Email:</h3>
+					<input type="text" name = "email-name"  value="<?php echo $email ?>">
+						<span class="error"><?php echo $email_error; ?></span>
+
+						<h3>CSUDH Identification Number:</h3>
+	 				 <input type="text" name = "number-name"  value="<?php echo $number ?>">
+	 				 	<span class="error"><?php echo $number_error; ?></span>
+
+
+						<h3>Major:</h3>
+											<input type="text" name = "major-name"  value="<?php echo $major ?>">
+						<span class="error"><?php echo $name_error; ?></span>
+
+						<h3>Reason for joining AMA:</h3>
+						<select name = "SelectReason[]" multiple>
+							<option value="one">Professional Development</option>
+							<option value="two">Workshops</option>
+							<option value="three">Networking</option>
+							<option value="four">Other</option>
+							<select>
+								<input type="submit" name="submit" value="submit">
 					<div class="success"><?php echo $success ?></div>
 				</form>
 			</div>
