@@ -970,6 +970,13 @@ object {
 
 .hr-cont {
 	text-align: center;
+    
+}
+
+
+.hr-cont-2 {
+	margin: 0 auto;
+    width: 80%;
 }
 
 .horizontal-rule {
@@ -1344,8 +1351,7 @@ object {
 
 /* FORM!!!!!! */
 form {
-	width: 800px;
-	background-color: #eee;
+	width: auto;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -1353,4 +1359,145 @@ form {
 form > input, form > select {
 	display: inline-block;
 	width: 50%;
+    border: 1px solid #eee;
+}
+form > input:focus, form > select:focus {
+	display: inline-block;
+	width: 50%;
+    border: 2px solid #eee;
+}
+
+.mtbpage-cont {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.mtb-cont {
+    width: auto;
+    height: 350px;
+    background-color: lightgray;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.mtb-left {
+    width: 45%  ;
+    background-color: #eee;
+    height: 100%;
+    float: left;
+    display: inline-block;
+        border-radius: 40px;
+}
+
+.mtb-right {
+    display: inline-block;
+    float: right;
+    width: 45%;
+    
+    background-color: #eee;
+    height: 100%;
+        border-radius: 40px;
+}
+
+[class*="mtb-"] {
+
+    text-align: center;
+    position: relative;
+    
+}
+
+[class*="mtb-"] h4, h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+[class*="mtb-"] img {
+    border-radius: 20px;
+    
+    width:150px;
+    height: 150px;
+}
+
+.mtb-left, .mtb-right {
+    max-width: 300px;
+}
+
+[id*="post-"] {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.entry-content p {
+    font-family: 'Raleway', sans-serif;     
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1100px) {
+    .nav-container {
+        width: 95%;
+    }
+    
+    .menu-item a {
+        font-size: 1em;
+    }
+    
+    .home1-text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .home1-text {
+        width: 90%;
+    }
+    .card {
+        margin: 0;
+    }
+    .home1 {
+        width: 95%;
+    }
+    .contactlogos {
+        width: 100%;
+    }
+    
+    .entry-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    [id*="post-"] {
+    width: 90%;
+}
+    
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        color: white;
+        background-color: darkgray;
+        font-family: 'Raleway';
+        text-align: center;
+        border-radius: 100px;
+        border: 0px;
+    }
+    .card {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .home-card {
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .entry-content {
+        font-size: 0.9em;
+        line-height: 1.1em;
+    }
 }

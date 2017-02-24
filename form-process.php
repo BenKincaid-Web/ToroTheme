@@ -21,41 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
-  if (empty($_POST["contact-email"])) {
-    $email_error = "Email is required";
-  } else {
-    $email = test_input($_POST["contact-email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $email_error = "Invalid email format";
-    }
-  }
+  
 
   if (empty($_POST["contact-phone"])) {
     $phone_error = "Phone is required";
-  } else {
-    $phone = test_input($_POST["contact-phone"]);
-    // check if e-mail address is well-formed
-    if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$phone)) {
-      $phone_error = "Invalid phone number";
-    }
-  }
+  } 
 
   if (empty($_POST["url"])) {
     $url_error = "";
-  } else {
-    $url = test_input($_POST["url"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$url)) {
-      $url_error = "Invalid URL";
-    }
   }
 
   if (empty($_POST["contact-message"])) {
     $message = "";
-  } else {
-    $message = test_input($_POST["contact-message"]);
-  }
+  } 
 
   if ($name_error == '') {
     $message_body = "";
@@ -70,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "benkincaidweb@gmail.com";
     $subject .= "$date: AMA Join Form Submission" ;
     $messagepost = "Date: $date" . "Name: $name";
-    if (mail($to, $subject, $messagepost, $name, $headers )){
+    if (mail($to, $subject, $name, $headers )){
     $success = "Thanks!!!!!!";
     $name = "";
   }
