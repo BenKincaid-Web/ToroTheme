@@ -17,7 +17,7 @@ include "parts/page-header.php"; ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
+		<?php
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );
@@ -28,7 +28,7 @@ include "parts/page-header.php"; ?>
 				endif;
 
 			endwhile; // End of the loop.
-			?>
+			?>		
             <div class="mtbpage-cont">
             
              <div class="mtb-cont clear">

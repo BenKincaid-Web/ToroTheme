@@ -19,14 +19,14 @@ include "parts/page-header.php"; ?>
 
 			?> 	<div class="nav-previous"><?php
                     
-                    $prev_post = get_previous_post(true, 'homepost');
+                    $prev_post = get_previous_post(true, 'uncategorized');
                     
                     if (!empty( $prev_post )): ?>
                     <a href="<?php echo $prev_post->guid ?>"><?php echo $prev_post->post_title ?></a>
                      <?php endif ?>
                     </div>
 				<div class="nav-next"><?php 
-                    $next_post = get_next_post(true, 'homepost');
+                    $next_post = get_next_post(true, 'uncategorized');
                     
                     if (!empty( $next_post )): ?>
                     <a href="<?php echo $next_post->guid ?>"><?php echo $next_post->post_title ?></a>
