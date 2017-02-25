@@ -1,4 +1,4 @@
-/*
+
 Theme Name: ToroAMA
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -1434,11 +1434,14 @@ form > input:focus, form > select:focus {
 
 
 .news-cont {
-	width: 80%;
-	margin: 0 auto;
+ width: 80%;
+ margin: 0 auto;
 }
 
-
+.entry-title a {
+  text-decoration: underline;
+ color: black;
+}
 
 
 
@@ -1506,11 +1509,18 @@ background-color: transparent;
         margin: 10px auto;
         text-align: center;
     }
-    .entry-content {
+    .entry-content, .news-cont {
         font-size: 0.9em;
         line-height: 1.1em;
     }
-	.hr-cont-2, .hr-cont, .horizontal-rule {
-display: none;
+	.follow {
+	float: right;
+    
+}
+
+	#colophon .site-info {
+	padding: 0; margin: 0;
+	margin: 0 auto;
+	text-align: center;
 }
 }

@@ -105,10 +105,38 @@ include "parts/page-header.php"; ?>
                 </div>
             </div>
                
+		 <div class="mtb-cont clear">
+                <div class="mtb-left">
+                    
+                    <h4>Amanda Reyes</h4>
+                    <img src="">
+                    <h5>VP of Public Relations</h5>
+                </div>
+                
+                <div class="mtb-right">
+                    <h4>Jessica Caramenes</h4>
+                    <img src = "">
+                    <h5>VP of Social Events</h5>
+                </div>
+            </div>
+ <div class="mtb-cont clear">
+                <div class="mtb-left">
+                    
+                    <h4>Berenice Alvarez</h4>
+                    <img src="">
+                    <h5>Membership Coordinator</h5>
+                </div>
+                
+                <div class="mtb-right">
+                    <h4>Carlos Montoya</h4>
+                    <img src = "">
+                    <h5>Recruitment Director</h5>
+                </div>
+            </div>
             </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-a
+
 <?php
 
 get_footer();

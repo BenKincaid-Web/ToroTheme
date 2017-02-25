@@ -13,7 +13,7 @@ include "parts/home-header.php"; ?>
         $card_2 = 1739; //Calendar of EVENTS META
         $card_3 = 1741; // MEET THE BOARD META
 
-        $card_1link = 1852; // MEMBER BENEFITS PL
+        $card_1link = 1880; // MEMBER BENEFITS PL
         $card_2link = 1729; //Calendar of EVENTS PL
         $card_3link = 1721; // MEET THE BOARD PL
 
@@ -43,7 +43,7 @@ include "parts/home-header.php"; ?>
                 <div class="card">
                     <div class="card-top">
                         <i class="fa fa-user-o fa-3x redlogos" aria-hidden="true"></i>
-                        <a href="<?php the_permalink($card_1link) ?>"><button class="more-1" >more...</button></a>
+                        <a href="member-benefits"><button class="more-1" >more...</button></a>
                     </div>
                     <div class="card-text">
                         <h4><?php echo $card1_title ?></h4>
@@ -86,7 +86,7 @@ include "parts/home-header.php"; ?>
                     <?php
 
                     $args = array( 'numberposts' => '5',
-                                    'category' => '34');
+                                    'category' => '35');
                     $recent_posts = wp_get_recent_posts( $args );
 
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );

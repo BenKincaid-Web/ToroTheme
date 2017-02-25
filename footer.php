@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info clear">
 			<div class="related footercol">
                 <h5>Related Sites</h5>
                 <p><a href = "https://ama.org">ama.org</a></p>
