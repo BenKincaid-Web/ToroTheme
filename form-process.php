@@ -1,6 +1,6 @@
 <?php
 
-print_r($_POST);
+
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Your name <info@address.com>' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -21,41 +21,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
-  if (empty($_POST["contact-email"])) {
-    $email_error = "Email is required";
-  } else {
-    $email = test_input($_POST["contact-email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $email_error = "Invalid email format";
-    }
-  }
+
 
   if (empty($_POST["contact-phone"])) {
     $phone_error = "Phone is required";
-  } else {
-    $phone = test_input($_POST["contact-phone"]);
-    // check if e-mail address is well-formed
-    if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$phone)) {
-      $phone_error = "Invalid phone number";
-    }
   }
 
   if (empty($_POST["url"])) {
     $url_error = "";
-  } else {
-    $url = test_input($_POST["url"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$url)) {
-      $url_error = "Invalid URL";
-    }
   }
 
   if (empty($_POST["contact-message"])) {
     $message = "";
   } else {
-    $message = test_input($_POST["contact-message"]);
+      $message = test_input($_POST["contact-message"]);
   }
+
+  if (empty($_POST["contact-email"])) {
+    $email = "";
+  } else {
+      $email = test_input($_POST["contact-email"]);
+  }
+
 
   if ($name_error == '') {
     $message_body = "";
@@ -69,9 +56,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $to = "benkincaidweb@gmail.com";
     $subject .= "$date: AMA Join Form Submission" ;
-    $messagepost = "Date: $date" . "Name: $name";
-    if (mail($to, $subject, $messagepost, $name, $headers )){
-    $success = "Thanks!!!!!!";
+    $messagepost = $name . $email;
+    if (mail($to, $subject, $messagepost, $headers )){
+    $success = "<p class = 'success' >Thank you! A board member will be in touch with you shortly!</p>";
     $name = "";
   }
 

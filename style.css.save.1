@@ -1,4 +1,4 @@
-/*
+*
 Theme Name: ToroAMA
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -970,7 +970,7 @@ object {
 
 .hr-cont {
 	text-align: center;
-
+    
 }
 
 
@@ -1193,7 +1193,8 @@ object {
     padding: 8px;
 }
 
-.site-info {
+.
+site-info {
     width: 50%;
     margin: 0 auto;
 }
@@ -1372,7 +1373,13 @@ form > input:focus, form > select:focus {
     margin: 0 auto;
     max-width: 800px;
 }
-
+.mtb-cont {
+    width: auto;
+    height: 350px;
+    background-color: lightgray;
+    margin-top: 0;
+    padding: 20px;
+}
 
 .mtb-left {
     width: 45%  ;
@@ -1387,7 +1394,7 @@ form > input:focus, form > select:focus {
     display: inline-block;
     float: right;
     width: 45%;
-
+    
     background-color: #eee;
     height: 100%;
         border-radius: 40px;
@@ -1397,7 +1404,7 @@ form > input:focus, form > select:focus {
 
     text-align: center;
     position: relative;
-
+    
 }
 
 [class*="mtb-"] h4, h5 {
@@ -1406,7 +1413,7 @@ form > input:focus, form > select:focus {
 
 [class*="mtb-"] img {
     border-radius: 20px;
-
+    
     width:150px;
     height: 150px;
 }
@@ -1423,94 +1430,38 @@ form > input:focus, form > select:focus {
 
 .entry-content p {
     font-family: 'Raleway', sans-serif;
-	text-indent: 60px;
+	text-indent: 60px;     
 }
 
 
 .news-cont {
-	width: 80%;
-	margin: 0 auto;
+ width: 80%;
+ margin: 0 auto;
+}
+
+.entry-title a {
+  text-decoration: underline;
+ color: black;
 }
 
 
-
-
-
-
-
-
-.mtb-box {
-	width: 50%;
-	padding: 40px;
-	background-color: lightgray;
-	height: 500px;
-	float: left;
-	margin: 0;
-	display: inline-block;
-
-
-}
-
-.mtb-content {
-	display: inline-block;
-	width: 100%;
-	background-color: gray;
-	margin: 0; padding: 0;
-	box-shadow: 0px 0px 0px 0px darkgray;
-	height: 100%;
-	transition: all 0.2s;
-	border-radius: 20px;
-	color: black;
-	font-size: 1em;
-}
-
-.mtb-content:hover {
-	box-shadow: 5px 5px 20px 3px darkgray;
-}
-
-.mtb-cont {
-    width: auto;
-    height: 100%;
-    background-color: lightgray;
-    margin-top: 0;
-    padding: 20px;
-}
-
-.mtb-content img {
-	position: relative;
-	height: auto;
-	width: 100%;
-	padding: 20px;
-}
-
-.crop {
-	width: 50px;
-	height: auto;
-}
-
-.success {
-	color: red;
-	font-family: 'Raleway';
-	text-align: center;
-}
 
 /* MEDIA QUERIES */
 @media (max-width: 1100px) {
     .nav-container {
         width: 95%;
     }
-
+    
     .menu-item a {
         font-size: 1em;
     }
-
+    
     .home1-text {
         width: 80%;
     }
 }
 
 @media (max-width: 900px) {
-
     .home1-text {
         width: 90%;
     }
@@ -1523,15 +1474,12 @@ form > input:focus, form > select:focus {
     .contactlogos {
         width: 100%;
     }
-
-		.site-info {
-			width: 100%;
-		}
+    
     .entry-content {
         width: 100%;
         margin: 0 auto;
     }
-
+    
     [id*="post-"] {
     width: 90%;
 }
@@ -1540,13 +1488,8 @@ form > input:focus, form > select:focus {
     display: block;
 }
 	.mtb-cont {
-background-color: transparent;
+background-color: transparent;    
 }
-
-.mtb-content {
-	height: 300px;
-}
-
 }
 
 @media (max-width: 600px) {
@@ -1567,19 +1510,19 @@ background-color: transparent;
         margin: 10px auto;
         text-align: center;
     }
-    .entry-content {
+    .entry-content, .news-cont {
         font-size: 0.9em;
         line-height: 1.1em;
     }
-	.hr-cont-2, .hr-cont, .horizontal-rule {
-display: none;
-}
-.mtb-box, .mtb-content {
-	width: 100%;
-	float: none;
+	.follow {
+	float: right;
+    
 }
 
-.mtbpage-cont {
+	#colophon .site-info {
+	padding: 0; margin: 0;
+	margin: 0 auto;
+	text-align: center;
 	width: 100%;
 }
 }

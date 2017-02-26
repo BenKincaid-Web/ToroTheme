@@ -32,7 +32,7 @@
             </nav><!-- #site-navigation -->
         </div>
         
-        <hr class="horizontal-rule">
+        <div class="hr-cont-2"><div class="horizontal-rule"></div></div>
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
