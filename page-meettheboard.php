@@ -215,7 +215,7 @@ include "parts/page-header.php"; ?>
 								<div class="mtb-box clear">
 									<div class="mtb-content">
 										<h4>Olivia Lee</h4>
-										<img src = "">
+										<img src = "http://i.imgur.com/foH3xir.jpg">
 										<p>Vice President</p>
 									</div>
 
@@ -236,6 +236,7 @@ include "parts/page-header.php"; ?>
 											</div>
 
 											</div>
+
 											<div class="mtb-box clear">
 												<div class="mtb-content">
 													<h4>Aimee Lopez</h4>
@@ -252,9 +253,17 @@ include "parts/page-header.php"; ?>
 													</div>
 													<div class="mtb-box clear">
 														<div class="mtb-content">
-															<h4>Mathew Warren</h4>
+															<h4>Matthew Warren</h4>
 															<img src = "http://i.imgur.com/5O9jeEt.jpg">
 															<p>V.P. of Finance</p>
+														</div>
+
+												</div>
+<div class="mtb-box clear">
+														<div class="mtb-content">
+															<h4>Ben Kincaid</h4>
+															<img src="http://i.imgur.com/bNJMbJr.jpg">
+															<p>Website Director</p>
 														</div>
 
 												</div>
@@ -269,7 +278,7 @@ include "parts/page-header.php"; ?>
 											<div class="mtb-box clear">
 												<div class="mtb-content">
 													<h4>Briseida Noriega</h4>
-													<img src = "">
+													<img src = "http://i.imgur.com/JgZL2Ki.jpg">
 													<p>Advertising & Promotion</p>
 												</div>
 
@@ -280,6 +289,8 @@ include "parts/page-header.php"; ?>
 												<img src = "">
 												<p>Recruitment Director</p>
 											</div>
+  </div>
+
 
 									</div>
 

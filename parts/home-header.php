@@ -54,7 +54,7 @@
 
 			if ( $content || is_customize_preview() ) : ?>
 				<p class="site-description"><?php   echo $content; /* WPCS: xss ok. */ ?></p>
-            <a href = "register.php"><button class="register">Register here!</button></a>
+            <a href = "join-ama"><button class="register">Register here!</button></a>
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
