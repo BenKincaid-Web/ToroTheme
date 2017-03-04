@@ -31,9 +31,9 @@
             
             <div class="follow footercol">
                 <h5>Follow us</h5>
-                 <a href="#"><i class="fa fa-twitter contactlogos fa-2x" aria-hidden="true"></i></a>
-                 <a href="#"><i class="fa fa-facebook contactlogos fa-2x" aria-hidden="true"></i></a>
-                 <a href="#"><i class="fa fa-snapchat contactlogos fa-2x" aria-hidden="true"></i></a>
+                 <a href="https://twitter.com/toros_ama/"><i class="fa fa-twitter contactlogos fa-2x" aria-hidden="true"></i></a>
+                 <a href="https://www.facebook.com/dominguezhillsAMA/"><i class="fa fa-facebook contactlogos fa-2x" aria-hidden="true"></i></a>
+                 <a href="https://www.instagram.com/toros_ama/"><i class="fa fa-instagram contactlogos fa-2x" aria-hidden="true"></i></a>
             </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

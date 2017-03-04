@@ -1,4 +1,4 @@
-/*
+*/
 Theme Name: ToroAMA
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -48,8 +48,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 /
-
-
+body, html {
+x-overflox: hidden;
+}
 
 
 html {
@@ -1271,6 +1272,7 @@ object {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
+   font-size: 0.8em;
 }
 
 .single-main {
@@ -1280,8 +1282,9 @@ object {
 
 .entry-content {
     border: 1px solid #eee;
-    margin: 22.5px 0px;
+    margin: 22.5px auto;
     background-color: #eee;
+	width: 80%;
     padding: 0px 30px;
     font-family: 'Lato', sans-serif;
 }
@@ -1426,7 +1429,7 @@ form > input:focus, form > select:focus {
 	text-indent: 60px;
 }
 
-
+s
 .news-cont {
 	width: 80%;
 	margin: 0 auto;
@@ -1550,13 +1553,28 @@ background-color: transparent;
 }
 
 @media (max-width: 600px) {
+	.site-title {
+	z-index: 0;
+	position: relative;
+}
+
+	.nav-menu, .site-content, form {
+	z-index: 5;
+	position: relative;
+}
+	.site-branding {
+	z-index: 0;
+	position: relative;
+}
+
     .menu-toggle {
         color: white;
-        background-color: darkgray;
+        background-color: #8B6100;
         font-family: 'Raleway';
         text-align: center;
-        border-radius: 100px;
-        border: 0px;
+		position: relative;
+				top: 7px; border-radius: 100px;
+				left: 4px;        border: 0px;
     }
     .card {
         margin: 0 auto;
@@ -1568,18 +1586,38 @@ background-color: transparent;
         text-align: center;
     }
     .entry-content {
-        font-size: 0.9em;
+        font-size: 0.95em;
         line-height: 1.1em;
     }
+.nav-previous a, .nav-next a {
+	font-size: 0.75em;
+}
 	.hr-cont-2, .hr-cont, .horizontal-rule {
 display: none;
+}
+.entry-title {
+	font-size: 23px;
+	margin-top: 40px;
 }
 .mtb-box, .mtb-content {
 	width: 100%;
 	float: none;
+	height: auto;
+	padding: 5px;
 }
 
 .mtbpage-cont {
 	width: 100%;
+}
+.home1, .site-content {
+background-color: white;
+
+}
+.news-ul {
+width: 95%;
+}
+
+.entry-title {
+font-size: 1em;
 }
 }
