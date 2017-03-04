@@ -101,6 +101,10 @@
 			for ( i = 0; i < parentLink.length; ++i ) {
 				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
+
+			if ($('menu-toggle').attr('aria-expanded') === true) {
+    $(this).find(".site-branding").toggleClass("menu-toggle-on");
+  }
 		}
 	}( container ) );
 } )();

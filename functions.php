@@ -105,6 +105,11 @@ add_action( 'widgets_init', 'toroama_widgets_init' );
  * Enqueue scripts and styles.
  */
 function toroama_scripts() {
+
+	wp_enqueue_script('my-custom-scripts', get_stylesheet_directory_uri().'/js/main.js');
+
+	wp_enqueue_script('my-js-script', get_stylesheet_directory_uri().'js/jquery-2.2.4.jss');
+
 	wp_enqueue_style( 'toroama-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'toroama-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -145,7 +150,7 @@ require get_template_directory() . '/inc/jetpack.php';
 
 
 
-function wpb_lastupdated_posts() { 
+function wpb_lastupdated_posts() {
 
     // Query Arguments
     $lastupdated_args = array(
@@ -160,12 +165,18 @@ function wpb_lastupdated_posts() {
     while( $lastupdated_loop->have_posts() && $counter < 5 ) : $lastupdated_loop->the_post();
     $string .= '<li><a href="' . get_permalink( $lastupdated_loop->post->ID ) . '"> ' .get_the_title( $lastupdated_loop->post->ID ) . '</a> ( '. get_the_modified_date() .') </li>';
     $counter++;
-    endwhile; 
+    endwhile;
     $string .= '</ul>';
     return $string;
-    wp_reset_postdata(); 
-    } 
+    wp_reset_postdata();
+    }
+
+		add_action('wp_enqueue_scripts', 'my_enqueue_front_scripts');
+		function my_enqueue_front_scripts(){
+
+
+
+		}
 
     //add a shortcode
     add_shortcode('lastupdated-posts', 'wpb_lastupdated_posts');
-

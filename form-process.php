@@ -21,11 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
+<<<<<<< HEAD
 
 
   if (empty($_POST["contact-phone"])) {
     $phone_error = "Phone is required";
   }
+=======
+  
+
+  if (empty($_POST["contact-phone"])) {
+    $phone_error = "Phone is required";
+  } 
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
 
   if (empty($_POST["url"])) {
     $url_error = "";
@@ -33,9 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (empty($_POST["contact-message"])) {
     $message = "";
+<<<<<<< HEAD
   } else {
       $message = test_input($_POST["contact-message"]);
   }
+=======
+  } 
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
 
   if (empty($_POST["contact-email"])) {
     $email = "";
@@ -56,9 +68,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $to = "benkincaidweb@gmail.com";
     $subject .= "$date: AMA Join Form Submission" ;
+<<<<<<< HEAD
     $messagepost = $name . $email;
     if (mail($to, $subject, $messagepost, $headers )){
     $success = "<p class = 'success' >Thank you! A board member will be in touch with you shortly!</p>";
+=======
+    $messagepost = "Date: $date" . "Name: $name";
+    if (mail($to, $subject, $name, $headers )){
+    $success = "Thanks!!!!!!";
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
     $name = "";
   }
 

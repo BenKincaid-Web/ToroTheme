@@ -28,6 +28,7 @@ include "parts/page-header.php"; ?>
 				endif;
 
 			endwhile; // End of the loop.
+<<<<<<< HEAD
 			?>
 
 
@@ -36,56 +37,102 @@ include "parts/page-header.php"; ?>
              <div class="mtb-cont clear">
                 <div class="mtb-left">
 
+=======
+			?>		
+            <div class="mtbpage-cont">
+            
+             <div class="mtb-cont clear">
+                <div class="mtb-left">
+                    
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                     <h4>Olivia Lee</h4>
                     <img src="https://toroama.files.wordpress.com/2016/09/olivia.jpg?w=&h=">
                     <h5>President</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Darline Zuniga</h4>
                     <img src="https://toroama.files.wordpress.com/2016/09/darline.jpg?w=150&h=150">
                     <h5>VP of Operations</h5>
                 </div>
+<<<<<<< HEAD
             </div>
 
             <div class="mtb-cont clear">
                 <div class="mtb-left">
 
+=======
+            </div>    
+                
+            <div class="mtb-cont clear">
+                <div class="mtb-left">
+                    
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                     <h4>Aimee Lopez</h4>
                     <img src="https://toroama.files.wordpress.com/2016/09/aimee.jpg?w=700&h=">
                     <h5>VP of Professional Development</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Ben Kincaid</h4>
                     <img src = "">
                     <h5>Website Director</h5>
+<<<<<<< HEAD
 
                 </div>
             </div>
 
+=======
+                    
+                </div>
+            </div>
+            
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
             <div class="mtb-cont clear">
                 <div class="mtb-left">
                     <h4>Dr. Kirti Celly</h4>
                     <img src="https://toroama.files.wordpress.com/2016/09/celly.jpg?w=150&h=150">
                     <h5>Faculty Advisor</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Mathew Warren</h4>
                     <img src="">
                     <h5>VP of Finance</h5>
                 </div>
             </div>
+<<<<<<< HEAD
 
                 <div class="mtb-cont clear">
                 <div class="mtb-left">
 
+=======
+                
+                <div class="mtb-cont clear">
+                <div class="mtb-left">
+                    
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                     <h4>Alex Phankoea</h4>
                     <img src="https://toroama.files.wordpress.com/2016/09/alex.jpg?w=150&h=150">
                     <h5>Creative Director</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Kelsey Mckay</h4>
                     <img src = "https://toroama.files.wordpress.com/2016/09/kelsey.jpg?w=150&h=150">
@@ -94,27 +141,46 @@ include "parts/page-header.php"; ?>
             </div>
                 <div class="mtb-cont clear">
                 <div class="mtb-left">
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                     <h4>Amanda Reyes</h4>
                     <img src="">
                     <h5>VP of Public Relations</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Jessica Caramenes</h4>
                     <img src = "">
                     <h5>VP of Social Events</h5>
                 </div>
             </div>
+<<<<<<< HEAD
 
 		 <div class="mtb-cont clear">
                 <div class="mtb-left">
 
+=======
+               
+		 <div class="mtb-cont clear">
+                <div class="mtb-left">
+                    
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                     <h4>Amanda Reyes</h4>
                     <img src="">
                     <h5>VP of Public Relations</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Jessica Caramenes</h4>
                     <img src = "">
@@ -123,17 +189,26 @@ include "parts/page-header.php"; ?>
             </div>
  <div class="mtb-cont clear">
                 <div class="mtb-left">
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                     <h4>Berenice Alvarez</h4>
                     <img src="">
                     <h5>Membership Coordinator</h5>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
                 <div class="mtb-right">
                     <h4>Carlos Montoya</h4>
                     <img src = "">
                     <h5>Recruitment Director</h5>
                 </div>
+<<<<<<< HEAD
 								--->
 
 
@@ -214,6 +289,9 @@ include "parts/page-header.php"; ?>
 
 
 
+=======
+            </div>
+>>>>>>> 0c9e225ce6ed067a2247a66303d1427e634fc148
             </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

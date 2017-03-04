@@ -1491,7 +1491,7 @@ form > input:focus, form > select:focus {
 .success {
 	color: red;
 	font-family: 'Raleway';
-	text-align: center;
+	text-align: center;;
 }
 
 /* MEDIA QUERIES */
@@ -1550,12 +1550,31 @@ background-color: transparent;
 }
 
 @media (max-width: 600px) {
-    .menu-toggle {
+	.site-title {
+
+		z-index: 0;
+		position: relative;
+	}
+
+	.nav-menu, .site-content, form {
+		z-index: 5;
+		position: relative;
+	}
+
+	.site-branding {
+		z-index: 0;
+		position: relative;
+	}
+
+		.menu-toggle {
         color: white;
-        background-color: darkgray;
+        background-color: #8B6100;
         font-family: 'Raleway';
         text-align: center;
         border-radius: 100px;
+				position: relative;
+				top: 10px;
+				left: 5px;
         border: 0px;
     }
     .card {
@@ -1568,8 +1587,8 @@ background-color: transparent;
         text-align: center;
     }
     .entry-content {
-        font-size: 0.9em;
-        line-height: 1.1em;
+        font-size: 1.1em;
+        line-height: 1.2em;
     }
 	.hr-cont-2, .hr-cont, .horizontal-rule {
 display: none;
