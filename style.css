@@ -1497,6 +1497,32 @@ s
 	text-align: center;
 }
 
+.form-text {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    float: left;
+    width: 50%;
+    margin: 20px 0; padding: 0;
+}
+
+.form-join {
+    width: 40%;
+}
+
+.form-join input {
+    width: 50%;
+   text-align: left;
+    margin: 20px 0; padding: 0;
+}
+
+.submit-input {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1100px) {
     .nav-container {
@@ -1549,6 +1575,10 @@ background-color: transparent;
 .mtb-content {
 	height: 300px;
 }
+    .form-join {
+        width: 80%;
+        font-size: 0.8em;
+    }
 
 }
 
