@@ -210,9 +210,9 @@ include "parts/page-header.php"; ?>
 										</div>
 										<div class="mtb-box clear">
 											<div class="mtb-content">
-												<h4>Carlos Montoya</h4>
-												<img src = "">
-												<p>Recruitment Director</p>
+												<h4>Frank Sanchez</h4>
+												<img src = "http://i.imgur.com/vGEfDis.jpg">
+												<p>Social Media Director</p>
 											</div>
   </div>
 
