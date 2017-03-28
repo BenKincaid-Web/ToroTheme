@@ -1,10 +1,9 @@
 */
 Theme Name: ToroAMA
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
+Author: Ben Kincaid/CSUDH American Marketing Association
+Author URI: benkincaid.com
+Description: The official theme for the American Marketing Association of CSUDH website.
+Version: 0.1 ALPHA
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: toroama
@@ -235,7 +234,9 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
+float: clear;
 }
+
 
 button[disabled],
 html input[disabled] {
@@ -1521,6 +1522,7 @@ s
     text-align: center;
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
+float: clear;
 }
 
 /* MEDIA QUERIES */
@@ -1528,6 +1530,12 @@ s
     .nav-container {
         width: 95%;
     }
+.submit-input {
+width: 100%;
+display: block;
+margin: 0 auto;
+text-align: center;
+}
 
     .menu-item a {
         font-size: 1em;
@@ -1579,7 +1587,9 @@ background-color: transparent;
         width: 80%;
         font-size: 0.8em;
     }
-
+.submit-input {
+float: clear;
+}
 }
 
 @media (max-width: 600px) {
@@ -1619,6 +1629,12 @@ background-color: transparent;
         font-size: 0.95em;
         line-height: 1.1em;
     }
+article > .entry-content {
+	width: 100%;
+}
+.single-main {
+width: 100%; margin: 0; padding: 0;}
+
 .nav-previous a, .nav-next a {
 	font-size: 0.75em;
 }
