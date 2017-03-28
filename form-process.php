@@ -1,5 +1,6 @@
-<?php
 
+<?php
+/*
 
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Your name <info@address.com>' . "\r\n";
@@ -74,3 +75,54 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
+*/
+
+$initLoad = true;
+    
+    if (isset($_POST['submit'])) {
+        
+        if(trim($_POST['contact-name']) == "") {
+            $nameError = 'Please enter your name.';
+            $hasError = true;
+        } else {
+            $name = trim($_POST['contact-name']);
+        }
+        
+        if(trim($_POST['email-name']) == "") {
+            $emailError = "Please enter your email.";
+            $hasError = true;
+        } else {
+            $email = trim($_POST['email-name']);
+        }
+        if (trim($_POST['number-name']) == "") {
+            $numberError = "Please enter your school Identification number.";
+            $hasError = true;
+        } else {
+            $number = trim($_POST['number-name']);
+        }
+        
+        if(trim($_POST['major-name']) == "") {
+            $majorError = "Please enter your major."; 
+            $hasError = true;
+        } else {
+            $major = trim($_POST['major-name']);
+        }
+        
+        if(!isset($hasError)) {
+            $emailToR = $email;
+            $emailTo = "BenKincaidWeb@gmail.com";
+            $subject = "AMA Join-Form Submission";
+            $body = "name: $name \n\nEmail: $email \n\nMajor: $major \n\nCSUDH #: $number";
+             $bodyR ="Thank you for your submission!";
+            $headers =  'MIME-Version: 1.0' . "\r\n";
+$headers .= 'From: ToroAMA <Submission@toroama.com>' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            wp_mail($emailTo, $subject, $body, $headers);
+            wp_mail($emailToR, $subject, $bodyR, $headers);
+            $emailSent = true;
+        }
+        else {
+            $initLoad = false;
+        }
+    }

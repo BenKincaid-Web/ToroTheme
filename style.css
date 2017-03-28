@@ -957,7 +957,7 @@ object {
 
 .menu-item a{
     color: white;
-    padding: 20px 30px;
+    padding: 30px 30px 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
@@ -1430,7 +1430,7 @@ form > input:focus, form > select:focus {
 	text-indent: 60px;
 }
 
-s
+
 .news-cont {
 	width: 80%;
 	margin: 0 auto;
@@ -1512,7 +1512,7 @@ s
 
 .form-join input {
     width: 50%;
-   text-align: left;
+  
     margin: 20px 0; padding: 0;
 }
 
@@ -1523,6 +1523,38 @@ s
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
 float: clear;
+    display: inline;
+}
+
+.form-col {
+    display: block;
+    width: 100%;   
+}
+
+.form-col-submit {
+    text-align: center;
+}
+select {
+    width: 50%;
+}
+
+.form-header-text {
+        font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    margin-top: 110px;
+    }
+.error {
+    color: red;
+    margin: 10px auto;
+    display: block;
+}
+
+#scrollbar {
+  background-color: #742942;
+  height: 10px;
+  width: 100%;
+  position: fixed;
+    z-index: 10;
 }
 
 /* MEDIA QUERIES */
@@ -1532,11 +1564,15 @@ float: clear;
     }
 .submit-input {
 width: 100%;
-display: block;
+display: inline-block;
 margin: 0 auto;
 text-align: center;
+    display: inline-block;
 }
 
+    .form-col {
+        text-align: center;
+    }
     .menu-item a {
         font-size: 1em;
     }
@@ -1588,14 +1624,31 @@ background-color: transparent;
         font-size: 0.8em;
     }
 .submit-input {
-float: clear;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline;
 }
+    
+    .form-col-submit {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
+    .entry-content p {
+    font-family: 'Raleway', sans-serif;
+	text-indent: 10px;
+}
 	.site-title {
 	z-index: 0;
 	position: relative;
+}
+.site-header {
+    height: 350px;
+    background-color: #BE8400;
 }
 
 	.nav-menu, .site-content, form {
@@ -1663,7 +1716,17 @@ background-color: white;
 width: 95%;
 }
 
+    
 .entry-title {
 font-size: 1em;
+    
 }
+    .form-col .form-text {
+        padding: 0; margin-bottom: 0;
+    }
+    .form-join {
+        width: 80%;
+        font-size: 0.7em;
+    }
 }
+

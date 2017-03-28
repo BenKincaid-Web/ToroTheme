@@ -105,6 +105,7 @@ add_action( 'widgets_init', 'toroama_widgets_init' );
  * Enqueue scripts and styles.
  */
 function toroama_scripts() {
+    
 	wp_enqueue_style( 'toroama-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'toroama-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -165,6 +166,7 @@ function wpb_lastupdated_posts() {
     return $string;
     wp_reset_postdata(); 
     } 
+    
 
     //add a shortcode
     add_shortcode('lastupdated-posts', 'wpb_lastupdated_posts');
