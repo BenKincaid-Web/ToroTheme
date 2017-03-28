@@ -53,6 +53,7 @@
 
 $( window ).resize(function() {
   var viewportWidth = $(window).width();
+   if (viewportWidth)
 });
      
      

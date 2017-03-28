@@ -20,8 +20,6 @@
 
 
 
-
-
 include "form-process.php";
 include "parts/page-header.php"; ?>
 
@@ -30,8 +28,9 @@ include "parts/page-header.php"; ?>
 
 			<div class="container">
 
-				<form method="post" class = "form-join" action = "<?php $_SERVER['PHP_SELF']; ?>">
+				<form method="post" class= "form-join" action = "<?php the_permalink(); ?>">
                     <h2 class = "form-header-text">Please fill out this form and a ToroAMA board member will be in touch with you shortly!</h2>
+<<<<<<< HEAD
                     <hr>
                     <div class="form-col">
                     <h3 class = "form-text">Name:</h3>
@@ -54,7 +53,7 @@ include "parts/page-header.php"; ?>
 				    <input type="text" name = "major-name"  value="<?php if(isset($_POST['major-name'])) echo $_POST['major-name'];?>">
 						<span class="error"><?php echo $majorError; ?></span>
                     </div>
-                    <div class="form-col">
+                    <div class="form-col">					
 						<h3 class = "form-text">Reason for joining AMA:</h3>
 						<select name = "SelectReason[]" multiple>
 							<option value="one">Professional Development</option>
@@ -82,3 +81,12 @@ include "parts/page-header.php"; ?>
 <?php
 
 get_footer();
+
+
+
+
+
+
+
+
+

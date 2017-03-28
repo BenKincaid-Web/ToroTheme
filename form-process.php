@@ -78,10 +78,10 @@ function test_input($data) {
 
 */
 
+
 $initLoad = true;
     
     if (isset($_POST['submit'])) {
-        
         if(trim($_POST['contact-name']) == "") {
             $nameError = 'Please enter your name.';
             $hasError = true;
@@ -110,19 +110,18 @@ $initLoad = true;
         }
         
         if(!isset($hasError)) {
-            $emailToR = $email;
-            $emailTo = "BenKincaidWeb@gmail.com";
+            $emailTo = "webmaster.ama.csudh@gmail.com";
+	    $emailToR = $email;
             $subject = "AMA Join-Form Submission";
             $body = "name: $name \n\nEmail: $email \n\nMajor: $major \n\nCSUDH #: $number";
-             $bodyR ="Thank you for your submission!";
+	   $bodyR = "Thanks you for your interest in joining the American Marketing Association! \n\nA board member will look over your submission and be in touch with you shortly. If you have any questions regarding AMA, please visit toroama.com or email webmaster.ama.csudh@gmail.com. \n\n We hope to see you as a part of the American Marketing Association at CSUDH very soon! \n\n Thank you, \n - The board members of American Marketing Assocaiton of CSUDH";
             $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: ToroAMA <Submission@toroama.com>' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-            wp_mail($emailTo, $subject, $body, $headers);
+$headers .= 'Content-type: text/plain; charset=iso-8859-1' . "\r\n";
+           wp_mail($emailTo, $subject, $body, $headers);
             wp_mail($emailToR, $subject, $bodyR, $headers);
             $emailSent = true;
         }
-        else {
-            $initLoad = false;
-        }
     }
+
+
