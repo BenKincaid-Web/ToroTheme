@@ -53,7 +53,7 @@
 
 $( window ).resize(function() {
   var viewportWidth = $(window).width();
-   if (viewportWidth)
+
 });
      
      
@@ -66,6 +66,9 @@ $(window).scroll(function() {
     barWidth = docHeight - toTop - windowHeight;
     
     barPerc = (barWidth/(docHeight - windowHeight)) * 100;
+    if (barPerc < 0) {
+        barPerc = 0;
+    }
   cssPerc = barPerc + "%";
     console.log(barPerc);
   

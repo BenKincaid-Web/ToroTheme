@@ -1556,7 +1556,47 @@ select {
   width: 100%;
   position: fixed;
     z-index: 10;
+}
 
+.orleans-banner {
+    background-color:#742942;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.orleans-banner > h4 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    z-index: 40;
+}
+
+.noBtn {
+    background-color: #f8d998;
+    color: white;
+    border: 0px;
+    width: 160px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 0px 0px;asdasda
+    transition: all 0.3s;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.noBtn:hover{
+    background-color:#d59710;
+    box-shadow: 1px 1px 10px 0px #eee;
+
+}
+
+
+.noBtn: focus {
+    border: 0;
+    outline: none;
+}
 /* MEDIA QUERIES */
 @media (max-width: 1100px) {
     .nav-container {
@@ -1638,6 +1678,11 @@ background-color: transparent;
 }
 
 @media (max-width: 600px) {
+
+    #scrollbar {
+        display: none;
+    }
+
     .entry-content p {
     font-family: 'Raleway', sans-serif;
 	text-indent: 10px;

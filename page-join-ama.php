@@ -30,7 +30,6 @@ include "parts/page-header.php"; ?>
 
 				<form method="post" class= "form-join" action = "<?php the_permalink(); ?>">
                     <h2 class = "form-header-text">Please fill out this form and a ToroAMA board member will be in touch with you shortly!</h2>
-<<<<<<< HEAD
                     <hr>
                     <div class="form-col">
                     <h3 class = "form-text">Name:</h3>

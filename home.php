@@ -2,6 +2,7 @@
 include "parts/home-header.php"; ?>
 
 	<div id="primary" class="content-area">
+    
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -79,7 +80,9 @@ include "parts/home-header.php"; ?>
             </div>
 
              </div>
+            
             <div class="home2">
+                 <?php include 'neworleansbanner.php' ?>
                 <h3>Latest News</h3>
                 <p>See what ToroAMA is up to!</p>
                 <ul class="news-ul">
